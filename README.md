@@ -3,6 +3,8 @@
 Flagit is a tiny npm package which can be used as a react component to display
 from about 242 supported country flags.
 
+## [View the live demo](https://525sb.csb.app/)
+
 ## How to use:
 
 `import Country from "flagit";`
