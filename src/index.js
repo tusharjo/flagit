@@ -8,6 +8,7 @@ export default function ({ countryShort, size, customWidth, customHeight }) {
       style={{
         width: customWidth ?? null,
         height: customHeight ?? null,
+        display: "inline-block",
       }}
     />
   );

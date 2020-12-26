@@ -3,6 +3,7 @@ import external from "rollup-plugin-peer-deps-external";
 import del from "rollup-plugin-delete";
 import pkg from "./package.json";
 import postcss from "rollup-plugin-postcss";
+import { terser } from "rollup-plugin-terser";
 
 export default {
   input: pkg.source,
@@ -13,13 +14,14 @@ export default {
   plugins: [
     postcss({
       extensions: [".css"],
+      minimize: true,
     }),
     external(),
     babel({
       exclude: "node_modules/**",
     }),
-
     del({ targets: ["dist/*"] }),
+    terser(),
   ],
   external: Object.keys(pkg.peerDependencies || {}),
 };
