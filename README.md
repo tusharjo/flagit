@@ -1,7 +1,7 @@
 # Flagit 🇮🇳
 
-Flagit is the smallest npm package (~50kb) that can be used as a react component
-to display flags from about 242 supported countries.
+Flagit is the smallest npm package to display flags (~50kb) from about 242
+supported countries that can be used as a react component.
 
 ### [View the live demo](https://525sb.csb.app/)
 
