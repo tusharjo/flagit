@@ -1,6 +1,6 @@
 {
   "name": "flagit",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,6 +16,16 @@
     "type": "git",
     "url": "git+https://github.com/tusharjo/flagit.git"
   },
+  "keywords": [
+    "react-component",
+    "flags",
+    "country flags",
+    "react",
+    "world",
+    "internationalization",
+    "language",
+    "flat icons"
+  ],
   "author": "Tushar J",
   "license": "ISC",
   "bugs": {
