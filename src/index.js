@@ -27,7 +27,7 @@ export default function ({ countryShort, size, customWidth, customHeight }) {
       selectedSize = 64;
       break;
     default:
-      selectedSize = 16;
+      selectedSize = 24;
   }
   if (backgroundPositionIndex < 0) {
     return (
