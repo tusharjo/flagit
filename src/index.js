@@ -2,39 +2,32 @@ import React from "react";
 import { allCountriesMap } from "./constant";
 import "./styles.css";
 
-export default function ({ countryShort, size, customWidth, customHeight }) {
+export default function ({ countryShort, size = "16" }) {
   let backgroundPositionIndex = allCountriesMap.indexOf(countryShort);
-  let selectedSize = "";
   switch (size) {
     case "sm":
-    case "16":
-      selectedSize = 16;
+      size = 16;
       break;
     case "md":
-    case "24":
-      selectedSize = 24;
+      size = 24;
       break;
     case "lg":
-    case "32":
-      selectedSize = 32;
+      size = 32;
       break;
     case "xl":
-    case "48":
-      selectedSize = 48;
+      size = 48;
       break;
     case "xxl":
-    case "64":
-      selectedSize = 64;
+      size = 64;
       break;
     default:
-      selectedSize = 24;
   }
   if (backgroundPositionIndex < 0) {
     return (
       <span
         style={{
-          width: `${selectedSize}px`,
-          height: `${selectedSize}px`,
+          width: `${size}px`,
+          height: `${size}px`,
           backgroundColor: "#f9f9fb",
           display: "inline-flex",
           alignItems: "center",
@@ -49,10 +42,12 @@ export default function ({ countryShort, size, customWidth, customHeight }) {
   } else {
     return (
       <span
-        className={`flags fflag-${countryShort} ff-${selectedSize}`}
+        className={`flags fflag-${countryShort}`}
         style={{
           display: "inline-block",
-          backgroundPositionX: -(backgroundPositionIndex * selectedSize),
+          width: `${size}px`,
+          height: `${size}px`,
+          backgroundPositionX: -(backgroundPositionIndex * size),
           backgroundPositionY: 0,
         }}
       />
