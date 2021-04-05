@@ -1,7 +1,7 @@
 # Flagit 🇮🇳
 
-Flagit is the smallest npm package to display flags (~50kb) from about 242
-supported countries that can be used as a react component.
+Flagit is the smallest npm package to display flags from about 242 supported
+countries that can be used as a react component.
 
 ### [View the live demo](https://525sb.csb.app/)
 
@@ -17,19 +17,16 @@ Then use the component by passing appropriate props as described below:
 
 OR
 
-`<Country countryShort="IN" customWidth="12px" customHeight="8px" />`
+`<Country countryShort="IN" size="24" />`
 
 Props:
 
-| Props        | Values                                                                                    | Description                                                                    |
-| ------------ | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| countryShort | as per https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements | Pass country code in this prop eg: `IN, US, AU`                                |
-| size         | sm, md, lg, xl                                                                            | sm=18w x11h<br /> md=27wx17h<br /> lg=42wx27h<br /> xl=60wx37h<br /> in pixels |
-| customWidth  | eg: `12px`                                                                                | Will override the size prop styling                                            |
-| customHeight | eg: `8px`                                                                                 | Will override the size prop styling                                            |
+| Props        | Values                                                                                    | Description                                                                                              |
+| ------------ | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| countryShort | as per https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements | Pass country code in this prop eg: `IN, US, AU`                                                          |
+| size         | sm, md, lg, xl, xxl <br/><b>OR</b><br/> 16, 24, 32, 48, 64                                | sm=16w x 16h<br /> md=24w x 24h<br /> lg=32w x 32h<br /> xl=48w x 48h<br /> xxl=64w x 64h<br />in pixels |
 
 ## Note:
 
-- Both customWidth and customHeight is mandatory to be used together while
-  declaring custom flag size in the ratio of `3:2` e.g: 12x8, 24x16, 48x32
-- Default size is set to `sm`
+- Default size is set to `sm` OR `16`
+- Removed customWidth and customHeight props
