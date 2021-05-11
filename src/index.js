@@ -42,7 +42,7 @@ export default function ({ countryShort, size = "16" }) {
   } else {
     return (
       <span
-        className={`flags fflag-${countryShort}`}
+        className={`flagit fflagit-${countryShort}`}
         style={{
           display: "inline-block",
           width: `${size}px`,
