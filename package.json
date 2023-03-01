@@ -1,6 +1,6 @@
 {
   "name": "flagit",
-  "version": "2.0.3",
+  "version": "2.0.6",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
