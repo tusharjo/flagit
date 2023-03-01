@@ -34,8 +34,8 @@
   },
   "homepage": "https://github.com/tusharjo/flagit#readme",
   "peerDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   },
   "dependencies": {},
   "devDependencies": {
